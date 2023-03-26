@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS GAME</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   
+   <div class="titleContainer">
+        <h2>Rock, Paper, & Scissors</h2>
+        <button type="button" class="d-flex float-end reload" onclick="restart();">Restart</button>
+   </div>
+   
+   <div class="scoreContainer">
+        <div class="innerScoreContainer">
+            <div class="row ">
+                <div class="col-6">
+                    <i class="fas fa-user "> Player</i><br>
+                    <div class='score text-center text-white  fst-italic' id="playerScore">Score: 0</div>
+                </div>
+                <div class="col-6">
+                    <i class="fas fa-computer "> Computer</i><br>
+                    <div class='score text-center text-white  fst-italic' id="computerScore">Score: 0</div>
+                </div>
+            </div>
+        </div>
+   </div><br>
+
+   <div id="choice" class=" d-flex justify-content-center">
+        <div class="innerChoice ">
+            <div class="gridContainer ">
+                <div class="grids" id="result">
+                    
+                </div>
+                <div class="grids" id="player">
+                    
+                </div>
+                
+                <div class="grids">
+                    <h2 class="vs">VS</h2>
+                </div>
+
+                <div class="grids" id="computer">
+                    
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- buttons -->
+   <div class="buttonsContainer">
+        <button id="rock" class="buttons" onclick="rock();">
+            Rock
+        </button>
+        <button id="paper" class="buttons" onclick="paper();">
+            Paper
+        </button>
+        <button id="scissors" class="buttons" onclick="scissors();">
+            Scissors
+        </button>
+   </div>
+
+   <div class="historyContainer">
+    <h2 class="text-white fst-italic">History</h2>
+    <hr>
+    <div id="history"></div>
+   </div>
+   <br><br><br>
+
+   <!-- footer -->
+   <div class="footer text-center">
+    <p>&#169;Copyright | Dizon Ejiph</p>
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="Assets/js/index.js"></script>
+</body>
+</html>
